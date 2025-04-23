@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="room entrance active" id="entrance">
+            <h1>Welcome to the Digital Art Gallery</h1>
+            <p>Choose a room to explore</p>
+            <div class="room-links">
+                <a class="room-link" onclick="showRoom('bw-room')">Black & White Room</a>
+                <a class="room-link" onclick="showRoom('color-room')">Color Canvas Room</a>
+                <a class="room-link" onclick="showRoom('sculpture-room')">Sculpture Room</a>
+            </div>
+        </div>
+        
+        <div class="room bw-room" id="bw-room">
+            <button class="back-to-entrance" onclick="showRoom('entrance')">Back to Entrance</button>
+            <h1>Black & White Room</h1>
+            <div class="art-gallery">
+                <div class="art-piece" onclick="showArtDetails('bw1')">
+                    <img src="./images/bw_1.png" alt="Abstract Lines" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('bw2')">
+                    <img src="./images/bw_2.jpg" alt="Geometric Forms" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('bw3')">
+                    <img src="./images/bw_3.jpg" alt="Urban Silhouette" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('bw4')">
+                    <img src="./images/bw_4.jpg" alt="Minimalist Portrait" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('bw5')">
+                    <img src="./images/bw_5.jpg" alt="Minimalist Portrait" class="art-image">
+                </div>
+            </div>
+            <div class="navigation-arrows">
+                <button class="nav-arrow" onclick="showRoom('sculpture-room')">←</button>
+                <button class="nav-arrow" onclick="showRoom('color-room')">→</button>
+            </div>
+        </div>
+        
+        <div class="room color-room" id="color-room">
+            <button class="back-to-entrance" onclick="showRoom('entrance')">Back to Entrance</button>
+            <h1>Color Canvas Room</h1>
+            <div class="art-gallery">
+                <div class="art-piece" onclick="showArtDetails('color1')">
+                    <img src="./images/color_1.jpg" alt="Vibrant Landscape" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color2')">
+                    <img src="./images/color_2.jpg" alt="Abstract Expressionism" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color3')">
+                    <img src="./images/color_3.png" alt="Color Field" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color4')">
+                    <img src="./images/color_4.jpg" alt="Pop Art Portrait" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color5')">
+                    <img src="./images/color_5.jpg" alt="Pop Art Portrait" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color6')">
+                    <img src="./images/color_6.jpg" alt="Pop Art Portrait" class="art-image">
+                </div>
+                <div class="art-piece" onclick="showArtDetails('color7')">
+                    <img src="./images/color_7.jpg" alt="Pop Art Portrait" class="art-image">
+                </div>
+            </div>
+            <div class="navigation-arrows">
+                <button class="nav-arrow" onclick="showRoom('bw-room')">←</button>
+                <button class="nav-arrow" onclick="showRoom('sculpture-room')">→</button>
+            </div>
+        </div>
+        
+        <div class="room sculpture-room" id="sculpture-room">
+            <button class="back-to-entrance" onclick="showRoom('entrance')">Back to Entrance</button>
+            <h1>Sculpture Room</h1>
+            <div class="art-gallery">
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture1')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_blob.jpg" alt="Modern Sculpture" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture2')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_blood_letter.jpg" alt="Bloodied Letter" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture3')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_brain.jpg" alt="Brain" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture4')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_computer.png" alt="Computer" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture5')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_dryad.png" alt="Dryad" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture6')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_octo.jpg" alt="Octopus" class="art-image">
+                    </div>
+                </div>
+                <div class="sculpture-piece" onclick="showArtDetails('sculpture7')">
+                    <div class="art-piece">
+                        <img src="./images/sculpture_pool_table.jpg" alt="Pool Table" class="art-image">
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-arrows">
+                <button class="nav-arrow" onclick="showRoom('color-room')">←</button>
+                <button class="nav-arrow" onclick="showRoom('bw-room')">→</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="art-modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">×</button>
+            <img src="" alt="" class="modal-image" id="modal-image">
+            <div class="modal-info">
+                <h2 id="modal-title">Artwork Title</h2>
+                <p id="modal-artist">Artist Name</p>
+                <p id="modal-year">Year</p>
+                <p id="modal-description">Description of the artwork.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
