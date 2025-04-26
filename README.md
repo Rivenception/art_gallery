@@ -10,7 +10,13 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
 1. Clone Repository or download zip file or go to DEMO github page
    
     > git clone https://github.com/giugnom3/thefourthroomgallery/blob/main/README.md
-    > 
+    
+    > [```bash
+    
+           git clone https://github.com/giugnom3/thefourthroomgallery.git
+
+           cd thefourthroomgallery]
+
     > cd the-fourth-room-gallery
     > 
     > **DEMO** https://giugnom3.github.io/thefourthroomgallery
