@@ -20,7 +20,7 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
     > 
     > **DEMO** https://giugnom3.github.io/thefourthroomgallery
     
-3. Install Dependencies
+2. Install Dependencies
    
     > npm install
 
@@ -31,11 +31,11 @@ npm install
 npm start
 
     
-5. Start the Dev Server
+3. Start the Dev Server
    
     > npm start
     
-7. Project will launch at http://localhost:3000
+4. Project will launch at http://localhost:3000
 
 
 🧩 Technologies Used:
