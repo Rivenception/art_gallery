@@ -23,6 +23,13 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
 3. Install Dependencies
    
     > npm install
+
+🔥 Quick Start Commands:
+
+npm install
+
+npm start
+
     
 5. Start the Dev Server
    
@@ -41,6 +48,7 @@ Vanilla CSS for easy styling
 
 Nipple.js (Joystick control for navigation)
 
+
 🎮 Features:
 
 🕹️ Navigate using the on-screen joystick.
@@ -55,11 +63,8 @@ Nipple.js (Joystick control for navigation)
 
 🚪 Room shortcut buttons (jump to rooms without filtering photo grid).
 
-🔥 Quick Start Commands:
 
-npm install
 
-npm start
 
  📁 Folder Structure:
 
