@@ -9,8 +9,10 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
 
 1. Clone Repository or download zip file or go to published github page
    
-    > git clone https://github.com/YOUR-USERNAME/the-fourth-room-gallery.git
+    > git clone https://github.com/giugnom3/thefourthroomgallery/blob/main/README.md
+    > 
     > cd the-fourth-room-gallery
+    > 
     > https://giugnom3.github.io/thefourthroomgallery
     
 3. Install Dependencies
@@ -27,22 +29,31 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
 🧩 Technologies Used:
 
 React (Vite Build)
+
 Three.js (3D Gallery Engine)
-Vanilla CSS for clean styling
+
+Vanilla CSS for easy styling
+
 Nipple.js (Joystick control for navigation)
 
 🎮 Features:
 
 🕹️ Navigate using the on-screen joystick.
+
 🖼️ Click artworks to open an info modal.
+
 📂 Dropdown filters rooms and photo grid library.
+
 🌗 Toggle Dark Mode / Light Mode.
+
 📋 Instructions modal for new visitors.
+
 🚪 Room shortcut buttons (jump to rooms without filtering photo grid).
 
 🔥 Quick Start Commands:
 
 npm install
+
 npm start
 
  📁 Folder Structure:
