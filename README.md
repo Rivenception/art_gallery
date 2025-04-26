@@ -11,7 +11,7 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
    
     > git clone https://github.com/giugnom3/thefourthroomgallery/blob/main/README.md
     
-    > [```bash
+    >      [```bash
     
            git clone https://github.com/giugnom3/thefourthroomgallery.git
 
