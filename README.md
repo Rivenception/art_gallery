@@ -17,7 +17,6 @@ Walk through immersive rooms, view artworks, and browse the full gallery library
 
            cd thefourthroomgallery]
 
-    > cd the-fourth-room-gallery
     > 
     > **DEMO** https://giugnom3.github.io/thefourthroomgallery
     
